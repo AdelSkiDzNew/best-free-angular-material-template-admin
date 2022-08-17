@@ -3,8 +3,9 @@ import {LoggerService} from "./services/logger.service";
 import {HTTP_INTERCEPTORS} from "@angular/common/http";
 import {DatePipe, LocationStrategy, PathLocationStrategy} from "@angular/common";
 import {LogResponseInterceptor} from "./interceptors/log-response.interceptor";
+import {AppService} from "./services/app.service";
 
-export const providers = [LoggerService, LogResponseInterceptor, DatePipe];
+export const providers = [LoggerService, LogResponseInterceptor, DatePipe, AppService];
 
 @NgModule({
   imports: [],

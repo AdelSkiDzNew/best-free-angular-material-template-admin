@@ -4,12 +4,13 @@ import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {IpMaterialModule} from "./material/ip-material.module";
+import {LoadingComponent} from "./components/loading/loading.component";
 
 @NgModule({
   declarations: [
-    SharedModule.IP_SHARED_COMPONENTS,
-    SharedModule.IP_SHARED_PIPES,
-    SharedModule.IP_SHARED_DIRECTIVES,
+    SharedModule.SHARED_COMPONENTS,
+    SharedModule.SHARED_PIPES,
+    SharedModule.SHARED_DIRECTIVES,
   ],
   imports: [
     CommonModule,
@@ -21,22 +22,22 @@ import {IpMaterialModule} from "./material/ip-material.module";
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    SharedModule.IP_SHARED_COMPONENTS,
-    SharedModule.IP_SHARED_PIPES,
-    SharedModule.IP_SHARED_DIRECTIVES,
+    SharedModule.SHARED_COMPONENTS,
+    SharedModule.SHARED_PIPES,
+    SharedModule.SHARED_DIRECTIVES,
     IpMaterialModule
   ],
   providers: []
 })
 export class SharedModule {
 
-  static readonly IP_SHARED_COMPONENTS = [
+  static readonly SHARED_COMPONENTS = [
+    LoadingComponent
+  ];
+  static readonly SHARED_DIRECTIVES = [
 
   ];
-  static readonly IP_SHARED_DIRECTIVES = [
-
-  ];
-  static readonly IP_SHARED_PIPES = [
+  static readonly SHARED_PIPES = [
 
   ];
 }

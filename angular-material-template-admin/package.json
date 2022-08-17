@@ -1,6 +1,6 @@
 {
   "name": "angular-material-template-admin",
-  "version": "0.0.0",
+  "version": "0.0.1-beta",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,12 +14,13 @@
     "@angular/common": "^14.1.0",
     "@angular/compiler": "^14.1.0",
     "@angular/core": "^14.1.0",
+    "@angular/flex-layout": "14.0.0-beta.40",
     "@angular/forms": "^14.1.0",
+    "@angular/material": "^14.1.0",
+    "@angular/material-moment-adapter": "^14.1.0",
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
-    "@angular/material": "^14.1.0",
-    "@angular/material-moment-adapter": "^14.1.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -1,0 +1,7 @@
+<mat-nav-list>
+  <li class="fp-list-group-item" *ngFor="let item of navbars;let i = index">
+    <a  mat-list-item [routerLink]=""  *ngIf="item.path && item.active" routerLinkActive="active" class="menu-link color-white" (click)="redirect(item)">
+      <span>{{item.title}}</span>
+    </a>
+  </li>
+</mat-nav-list>

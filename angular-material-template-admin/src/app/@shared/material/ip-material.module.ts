@@ -29,6 +29,6 @@ export class IpMaterialModule {
     MatListModule,
     MatToolbarModule,
     MatIconModule,
-    MatProgressBarModule,
+    MatProgressBarModule
   ];
 }

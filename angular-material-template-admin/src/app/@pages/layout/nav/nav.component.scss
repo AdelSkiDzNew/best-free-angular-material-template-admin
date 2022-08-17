@@ -1,0 +1,19 @@
+@import "~src/assets/styles/custom-theme";
+
+.fp-list-group-item {
+  position: relative;
+  display: block;
+  background-color: $primary;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: none;
+  border-top: none;
+}
+
+.mat-list-base{
+  padding: 0px!important;
+}
+
+.menu-link {
+  padding: 10px 0 !important;
+  height: auto !important;
+}

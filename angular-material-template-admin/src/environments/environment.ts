@@ -1,10 +1,14 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+import packageJson from '../../package.json';
 
 export const environment = {
-  production: false
+  uiVersion: packageJson.version,
+  production: false,
+  baseUrl : '/api'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

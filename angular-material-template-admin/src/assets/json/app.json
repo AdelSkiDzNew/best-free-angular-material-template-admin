@@ -1,0 +1,19 @@
+{
+  "navbar" : {
+    "title" : "title",
+    "menu" :[
+      {
+        "path": "title1",
+        "title": "title1",
+        "icon": "",
+        "active": true
+      },
+      {
+        "path": "title2",
+        "title": "title2",
+        "icon": "",
+        "active": true
+      }
+    ]
+  }
+}

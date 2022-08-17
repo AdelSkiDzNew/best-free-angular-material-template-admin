@@ -1,4 +1,32 @@
-<p>Slm</p>
-<div>
-  <router-outlet></router-outlet>
-</div>
+<app-loading [loading]="loading"></app-loading>
+<mat-sidenav-container class="sidenav-container fade-in">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>
+      <h1 class="color-white ma-auto">{{title}}</h1>
+    </mat-toolbar>
+    <hr>
+    <div class="text-center">
+      <img [src]="logoPathCAPS" width="200" height="70" alt="logo_CA-PS"/>
+    </div>
+    <hr>
+    <app-nav [navbars]="navbars"></app-nav>
+  </mat-sidenav>
+  <mat-sidenav-content  fxLayout="column">
+    <mat-toolbar class="header-bg">
+      <button class="border-none cursor-pointer" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon" color="accent">{{ drawer.opened ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+      <br>
+      <br>
+    </mat-toolbar>
+    <hr>
+    <app-content-top></app-content-top>
+    <div fxFlex class="pt-10 pl-10 pr-10">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer ></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

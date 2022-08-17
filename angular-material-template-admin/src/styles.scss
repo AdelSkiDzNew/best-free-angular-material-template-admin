@@ -1,1 +1,191 @@
 /* You can add global styles to this file, and also import other style files */
+@import "src/assets/styles/custom-theme.scss";
+$base-color-iP: #ffffff!important;
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.color-white {
+  color: $base-color-iP;
+}
+ul li {
+  list-style-type: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: transparent;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: 0px!important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+  margin: 0px!important;
+}
+
+input.mat-input-element {
+  margin-top: 0.15em;
+}
+
+mat-form-field label {
+  font-size: 11px!important;
+}
+.font-size-10 {
+  font-size: 10px!important;
+}
+.font-size-12{
+  font-size: 12px!important;
+}
+.font-size-14{
+  font-size: 14px!important;
+}
+th.mat-header-cell {
+  padding-left: 0px!important;
+}
+
+
+mat-nav-list li a {
+  font-size: 13px;
+}
+
+// BUTTONS
+.btn-primary {
+  background-color: $accent !important;
+  border-color: $accent !important;
+}
+
+// TOOLTIPS
+.mat-tooltip {
+  font-size: 11px !important;
+  background-color: $accent;
+}
+// margin-auto
+.ma-auto {
+  margin: auto !important;
+}
+
+// padding-top
+.pt-10 {
+  padding-top: 10px;
+}
+
+// padding-left
+.pl-10 {
+  padding-left: 10px;
+}
+
+// padding-right
+.pr-10 {
+  padding-right: 10px;
+}
+
+.mat-grid-tile-content {
+  display: inline-block!important;
+}
+.fw-bold {
+  font-weight: bold;
+}
+
+.color-black{
+  color: black;
+}
+
+table tr td {
+  font-size: 12px!important;
+}
+
+.td-color {
+  color: #525f7f;
+}
+
+
+table tr td a {
+  color: #525f7f;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+table thead {
+  background: #f6f9fc;
+}
+
+mat-grid-tile span {
+  font-size: 12px!important;
+}
+
+.with-250{
+  width: 250px;
+}
+
+.with-550{
+  width: 550px;
+}
+
+.height-200{
+  height: 200px!important;
+}
+.with-180{
+  width: 180px;
+}
+.with-120{
+  width: 120px;
+}
+
+.with-140{
+  width: 140px;
+}
+
+.with-80{
+  width: 80px;
+}
+.pd-0{
+  padding: 0px!important;
+}
+.pd-10 {
+  padding: 10px;
+}
+.pd-r-5 {
+  padding-right: 5px;
+}
+.mat-icon-copy {
+  font-size: 20px;
+  vertical-align: inherit;
+}
+
+.mat-icon-refresh {
+  font-size: 25px;
+  vertical-align: inherit;
+}
+
+.statut-valid {
+  background: greenyellow;
+  padding:7px;
+  font-weight: bold;
+}
+.statut-invalid {
+  background: red;
+  padding:7px;
+  font-weight: bold;
+  color: white;
+}
+.statut-autre {
+  background: gold;
+  padding:7px;
+  font-weight: bold;
+}
+
+.border-radius-none {
+  border-radius: 0 !important;
+}
+.vertical-align-bt {
+  vertical-align: bottom!important;
+}

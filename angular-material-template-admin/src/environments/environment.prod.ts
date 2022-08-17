@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  uiVersion: '',
+  production: false,
+  baseUrl : '/api'
 };
