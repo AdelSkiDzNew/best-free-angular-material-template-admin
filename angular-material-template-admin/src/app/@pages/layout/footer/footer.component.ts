@@ -10,7 +10,7 @@ import {environment} from '../../../../environments/environment';
 export class FooterComponent implements OnInit {
 
   username: string = "inconnu"
-  uiVersion: string = environment.uiVersion;
+  uiVersion: string = environment.version;
 
   constructor(private _loggerService: LoggerService) {
     this._loggerService.debug(FooterComponent.name, 'le composant a bien été chargé');

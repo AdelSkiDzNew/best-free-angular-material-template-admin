@@ -3,8 +3,8 @@
 .fp-list-group-item {
   position: relative;
   display: block;
-  background-color: $primary;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(0, 0, 0, 0.4);
   border-right: none;
   border-top: none;
 }
@@ -14,6 +14,6 @@
 }
 
 .menu-link {
-  padding: 10px 0 !important;
+  padding: 15px 0 !important;
   height: auto !important;
 }

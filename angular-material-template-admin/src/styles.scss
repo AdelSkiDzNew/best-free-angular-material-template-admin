@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "src/assets/styles/custom-theme.scss";
-$base-color-iP: #ffffff!important;
+$base-color-app: #ffffff!important;
 
 html, body {
   height: 100%;
@@ -10,7 +10,7 @@ html, body {
 
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .color-white {
-  color: $base-color-iP;
+  color: $base-color-app;
 }
 ul li {
   list-style-type: none;
@@ -164,23 +164,6 @@ mat-grid-tile span {
 .mat-icon-refresh {
   font-size: 25px;
   vertical-align: inherit;
-}
-
-.statut-valid {
-  background: greenyellow;
-  padding:7px;
-  font-weight: bold;
-}
-.statut-invalid {
-  background: red;
-  padding:7px;
-  font-weight: bold;
-  color: white;
-}
-.statut-autre {
-  background: gold;
-  padding:7px;
-  font-weight: bold;
 }
 
 .border-radius-none {

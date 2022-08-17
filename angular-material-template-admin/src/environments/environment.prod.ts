@@ -1,5 +1,7 @@
+import packageJson from "../../package.json";
+
 export const environment = {
-  uiVersion: '',
+  version: packageJson.version,
   production: false,
   baseUrl : '/api'
 };

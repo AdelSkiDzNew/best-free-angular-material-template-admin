@@ -5,13 +5,11 @@
                [mode]="(isHandset$ | async) ? 'over' : 'side'"
                [opened]="(isHandset$ | async) === false">
     <mat-toolbar>
-      <h1 class="color-white ma-auto">{{title}}</h1>
+      <img [src]="logo" width="50" height="50">
+      <h1 class="color-white ma-auto">
+        {{title}}
+      </h1>
     </mat-toolbar>
-    <hr>
-    <div class="text-center">
-      <img [src]="logoPathCAPS" width="200" height="70" alt="logo_CA-PS"/>
-    </div>
-    <hr>
     <app-nav [navbars]="navbars"></app-nav>
   </mat-sidenav>
   <mat-sidenav-content  fxLayout="column">

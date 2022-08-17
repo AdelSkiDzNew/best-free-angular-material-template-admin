@@ -21,7 +21,7 @@ export class PageComponent implements OnInit, OnDestroy {
   public loading: boolean  = false ;
   public navbars: Array<NavBar> = [];
   public title: string | undefined;
-  public logoPathCAPS: string;
+  public logo: string;
 
   constructor(private _loggerService: LoggerService,
               private breakpointObserver: BreakpointObserver,
@@ -32,7 +32,7 @@ export class PageComponent implements OnInit, OnDestroy {
     this._loadingPage();
     this._getUrlCurrentPage();
     this._setNavBars();
-    this.logoPathCAPS = _locationStrategy.getBaseHref() + 'assets/images/logo_caps_blanc.png';
+    this.logo = _locationStrategy.getBaseHref() + 'assets/images/logo_ui_material.png';
   }
 
   ngOnInit(): void {}
