@@ -1,11 +1,12 @@
 import {NgModule} from '@angular/core';
 import {ExtraOptions, RouterModule, Routes} from '@angular/router';
+import {Route} from "./@pages/page-routing.module";
 
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: `/`,
+    redirectTo: `${Route.Dashboard}`,
     pathMatch: 'full'
   }
 ];

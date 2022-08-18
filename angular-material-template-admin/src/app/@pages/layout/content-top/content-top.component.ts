@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from "rxjs";
 import {Router} from "@angular/router";
-import {Navigation} from "../../../@core/models/models";
+import {Title, ValueContentTop} from "../../../@core/models/models";
 import {AppService} from "../../../@core/services/app.service";
 
 @Component({
@@ -13,28 +13,31 @@ export class ContentTopComponent implements OnInit, OnDestroy {
 
   navigations: (any)[] = [];
   dataSubscription$: Subscription  = Subscription.EMPTY;
+  routeTitle: Title | undefined;
 
-  constructor(public appService: AppService, private _router: Router) {
+  constructor(public _appService: AppService, private _router: Router) {
     this.getRouteTitle();
-  }
-
-  private getRouteTitle() {
-    this.dataSubscription$ = this.appService.data$.subscribe((data: any) => {
-      if (data.ev === 'isActived') {
-        this.navigations = data.value.navigation;
-      }
-    });
   }
 
   ngOnInit(): void {}
 
+
+  navigate(value: ValueContentTop) {
+   /* if(actived)
+      this._router.navigate([routerLink?.path], {queryParams: routerLink?.queryParams});*/
+  }
+
+  private getRouteTitle() {
+    this._appService.data$.subscribe((data:Title) => {
+      if (data.ev === 'isActived') {
+        this.routeTitle = {ev: data.ev, value : data.value};
+      }
+    });
+  }
   ngOnDestroy(): void {
     this.dataSubscription$.unsubscribe();
   }
 
-  navigate(routerLink: any, actived: boolean) {
-    if(actived)
-    this._router.navigate([routerLink?.path], {queryParams: routerLink?.queryParams});
-  }
+
 }
 

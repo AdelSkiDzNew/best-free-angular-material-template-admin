@@ -3,6 +3,7 @@ import {Router} from "@angular/router";
 import {LoggerService} from "../../../@core/services/logger.service";
 import {NavBar} from "../../../@core/models/models";
 import {AppService} from "../../../@core/services/app.service";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-nav',
@@ -15,7 +16,7 @@ export class NavComponent implements OnInit {
 
   constructor(private _router: Router,
               private _loggerService: LoggerService,
-              private appService: AppService) {
+              private _appService: AppService) {
     this._loggerService.debug(NavComponent.name, 'le composant a bien été chargé');
   }
 
@@ -27,12 +28,7 @@ export class NavComponent implements OnInit {
   }
 
   selectItem(item: any) {
-    this.appService.routeEvent('isActived', {
-        navigation: [
-          {actived: true, uuid: '', name: item.title, routerLink: item.path},
-        ]
-      }
-    );
+    //this.appService.routeEvent({e:Title});
   }
 
 }

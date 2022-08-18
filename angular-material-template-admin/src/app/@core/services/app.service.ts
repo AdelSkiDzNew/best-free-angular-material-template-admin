@@ -4,12 +4,14 @@ import {map} from "rxjs/operators";
 import {HttpClient} from "@angular/common/http";
 import {LoggerService} from "./logger.service";
 import {LocationStrategy} from "@angular/common";
+import {Title} from "../models/models";
 
-@Injectable()
+@Injectable({providedIn :"root"})
 export class AppService {
 
   private baseHref: string;
   private dataSource = new Subject<any>();
+  public path: string | undefined;
 
   constructor(private _logger:LoggerService, private _httpClient: HttpClient, private _locationStrategy:LocationStrategy) {
     this.baseHref = _locationStrategy.getBaseHref();
@@ -17,11 +19,8 @@ export class AppService {
 
   data$ = this.dataSource.asObservable();
 
-  public routeEvent(ev: any, value: any) {
-    this.dataSource.next({
-      ev: ev,
-      value: value
-    })
+  public routeEvent(title: Title) {
+    this.dataSource.next(title);
   }
 
 

@@ -20,7 +20,7 @@ export class LogResponseInterceptor implements HttpInterceptor {
   constructor(private _loggerService: LoggerService) {}
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    this._loggerService.debug(LogResponseInterceptor.name,`request: `,{url: `${req.url}`, method: `${req.method}`, responseType: `${req.responseType}`});
+    this._loggerService.debug(LogResponseInterceptor.name,`request: `,JSON.stringify({url: `${req.url}`, method: `${req.method}`, responseType: `${req.responseType}`}));
     return next.handle(req)
       .pipe(
         tap(event => {

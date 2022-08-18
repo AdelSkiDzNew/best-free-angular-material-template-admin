@@ -1,7 +1,5 @@
 <mat-toolbar class="height-50 mat-toolbar-ip">
-  <span *ngFor="let i of navigations" class="font-size-16">
-    <a [routerLink]="" (click)="navigate(i?.routerLink, i?.actived)" class="cursor-pointer" [ngClass]="{'color-link': i?.actived}">{{i?.name}} </a>
-    <span class="pd-r-5">{{i?.uuid}} </span>
+  <span *ngFor="let i of routeTitle?.value" class="font-size-16">
+    <a [routerLink]="" (click)="navigate(i)" class="cursor-pointer pd-r-5" [ngClass]="{'color-link': i?.actived}">{{i?.name}} </a>
   </span>
 </mat-toolbar>
-<br>
