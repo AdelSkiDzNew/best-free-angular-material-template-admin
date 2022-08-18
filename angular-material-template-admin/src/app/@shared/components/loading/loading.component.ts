@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {LoggerService} from "../../../@core/services/logger.service";
 
 @Component({
   selector: 'app-loading',
@@ -10,7 +11,9 @@ export class LoadingComponent implements OnInit {
   @Input()
   loading: boolean  = false ;
 
-  constructor() { }
+  constructor(private _loggerService: LoggerService) {
+    this._loggerService.debug(LoadingComponent.name);
+  }
 
   ngOnInit(): void{}
 }
