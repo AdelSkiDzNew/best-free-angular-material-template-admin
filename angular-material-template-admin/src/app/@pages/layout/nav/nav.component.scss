@@ -27,3 +27,9 @@
   background: rgba(0, 0, 0, 0.125);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+::ng-deep .expansion-indicator > .mat-expansion-indicator::after {
+  color: white;
+}
+.active {
+  background: rgba(255, 255, 255, 0.3);
+}
