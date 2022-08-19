@@ -11,12 +11,13 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {MatListModule} from "@angular/material/list";
 import {MatIconModule} from "@angular/material/icon";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
-  imports: IpMaterialModule.MATERIAL_MODULE_LIST,
-  exports: IpMaterialModule.MATERIAL_MODULE_LIST
+  imports: MaterialModule.MATERIAL_MODULE_LIST,
+  exports: MaterialModule.MATERIAL_MODULE_LIST
 })
-export class IpMaterialModule {
+export class MaterialModule {
   static readonly MATERIAL_MODULE_LIST = [
     MatTableModule,
     MatPaginatorModule,
@@ -29,6 +30,7 @@ export class IpMaterialModule {
     MatListModule,
     MatToolbarModule,
     MatIconModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatExpansionModule
   ];
 }

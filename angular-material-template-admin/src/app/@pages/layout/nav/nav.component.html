@@ -5,3 +5,17 @@
     </a>
   </li>
 </mat-nav-list>
+<mat-accordion multi>
+  <mat-expansion-panel *ngFor="let item of navbars;let i = index">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <a  mat-list-item [routerLink]=""  *ngIf="item.path && item.active" routerLinkActive="active" class="menu-link color-white" (click)="redirect(item)">
+          <span style="color: #3c4b64">{{item.title}}</span>
+        </a>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>sous-titre1</p>
+    <p>sous-titre2</p>
+    <p>sous-titre3</p>
+  </mat-expansion-panel>
+</mat-accordion>

@@ -1,9 +1,10 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
 import {LoggerService} from "../../../@core/services/logger.service";
 import {NavBar} from "../../../@core/models/models";
 import {AppService} from "../../../@core/services/app.service";
 import {Title} from "@angular/platform-browser";
+import {MatAccordion} from "@angular/material/expansion";
 
 @Component({
   selector: 'app-nav',
@@ -11,12 +12,12 @@ import {Title} from "@angular/platform-browser";
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-
+  @ViewChild(MatAccordion) accordion: MatAccordion | undefined;
   @Input() navbars: any;
 
   constructor(private _router: Router,
               private _loggerService: LoggerService,
-              private _appService: AppService) {
+              private appService: AppService) {
     this._loggerService.debug(NavComponent.name, 'le composant a bien été chargé');
   }
 
