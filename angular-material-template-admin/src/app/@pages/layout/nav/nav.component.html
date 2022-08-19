@@ -5,12 +5,12 @@
     </a>
   </li>
 </mat-nav-list>
-<mat-accordion multi>
+<mat-accordion multi class="fp-list-group-item">
   <mat-expansion-panel *ngFor="let item of navbars;let i = index">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <a  mat-list-item [routerLink]=""  *ngIf="item.path && item.active" routerLinkActive="active" class="menu-link color-white" (click)="redirect(item)">
-          <span style="color: #3c4b64">{{item.title}}</span>
+          <span>{{item.title}}</span>
         </a>
       </mat-panel-title>
     </mat-expansion-panel-header>

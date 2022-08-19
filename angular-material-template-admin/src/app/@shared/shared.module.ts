@@ -3,8 +3,8 @@ import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MaterialModule} from "./material/ip-material.module";
 import {LoadingComponent} from "./components/loading/loading.component";
+import {MaterialModule} from "./material/material.module";
 
 @NgModule({
   declarations: [
