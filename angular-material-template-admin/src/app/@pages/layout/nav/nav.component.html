@@ -1,23 +1,18 @@
 <mat-accordion multi class="fp-list-group-item">
-  <mat-nav-list>
-    <li class="fp-list-group-item" *ngFor="let item of navbars;let i = index">
-      <a  mat-list-item [routerLink]="item.path"  *ngIf="item.path && item.active && item.sub === undefined" routerLinkActive="active" class="menu-link color-white" (click)="redirect(item)">
-        <span>{{item.title}}</span>
-      </a>
-    </li>
-  </mat-nav-list>
-  <mat-expansion-panel *ngFor="let item of navbars;let i = index">
-    <mat-expansion-panel-header class="expansion-indicator" *ngIf="item.sub !== undefined">
-      <mat-panel-title>
-        <a  mat-list-item [routerLink]=""  *ngIf="item.path && item.active" routerLinkActive="active" class="menu-link color-white" (click)="redirect(item)">
-          <span>{{item.title}}</span>
-        </a>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <mat-panel-title *ngFor="let ii of item.sub;">
-      <a  mat-list-item [routerLink]=""  *ngIf="ii.path && ii.active" routerLinkActive="active" class="menu-link color-white cursor-pointer" (click)="redirect(ii)">
-        <span>{{ii.title}}</span>
-      </a>
-    </mat-panel-title>
-  </mat-expansion-panel>
+  <span *ngFor="let item of navbars;let i = index">
+      <mat-expansion-panel [disabled]="!item.sub" class="cursor-pointer">
+        <mat-expansion-panel-header class="expansion-indicator" routerLinkActive="active">
+          <mat-panel-title>
+            <a  mat-list-item [routerLink]="item.path"  *ngIf="item.path && item.active" class="menu-link color-white"  (click)="redirect(item)">
+              <span>{{item.title}}</span>
+            </a>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+          <mat-panel-title  *ngFor="let ii of item.sub;" routerLinkActive="active">
+            <a  mat-list-item [routerLink]="item.path"  *ngIf="ii.path && ii.active" class="menu-link color-white cursor-pointer" (click)="redirect(ii)">
+              <span>{{ii.title}}</span>
+            </a>
+          </mat-panel-title>
+      </mat-expansion-panel>
+    </span>
 </mat-accordion>

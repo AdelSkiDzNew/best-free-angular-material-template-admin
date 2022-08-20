@@ -4,7 +4,7 @@
   position: relative;
   display: block;
   background-color: rgba(0, 0, 0, 0.125);
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  //border: 1px solid rgba(0, 0, 0, 0.1);
   border-right: none;
   border-top: none;
 }
@@ -26,6 +26,10 @@
 .mat-expansion-panel-header {
   background: rgba(0, 0, 0, 0.125);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mat-expansion-panel-header:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 ::ng-deep .expansion-indicator > .mat-expansion-indicator::after {
   color: white;

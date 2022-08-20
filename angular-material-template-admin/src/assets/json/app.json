@@ -3,8 +3,26 @@
     "title" : "Material UI",
     "menu" :[
       {
-        "path": "title1",
-        "title": "title1",
+        "path": "dashboard",
+        "title": "Dashboard",
+        "icon": "",
+        "active": true
+      },
+      {
+        "path": "typography",
+        "title": "Typography",
+        "icon": "",
+        "active": true
+      },
+      {
+        "path": "colors",
+        "title": "Colors",
+        "icon": "",
+        "active": true
+      },
+      {
+        "path": "Components",
+        "title": "Components",
         "icon": "",
         "active": true,
         "sub": [
@@ -23,10 +41,124 @@
         ]
       },
       {
-        "path": "dashboard",
-        "title": "Dashboard",
+        "path": "Buttons",
+        "title": "Buttons",
         "icon": "",
-        "active": true
+        "active": true,
+        "sub": [
+          {
+            "path": "title1-1",
+            "title": "title1-1",
+            "icon": "",
+            "active": true
+          },
+          {
+            "path": "title-1-2",
+            "title": "title1-2",
+            "icon": "",
+            "active": true
+          }
+        ]
+      },
+      {
+        "path": "Forms",
+        "title": "Forms",
+        "icon": "",
+        "active": true,
+        "sub": [
+          {
+            "path": "title1-1",
+            "title": "title1-1",
+            "icon": "",
+            "active": true
+          },
+          {
+            "path": "title-1-2",
+            "title": "title1-2",
+            "icon": "",
+            "active": true
+          }
+        ]
+      },
+      {
+        "path": "Pages",
+        "title": "Pages",
+        "icon": "",
+        "active": true,
+        "sub": [
+          {
+            "path": "title1-1",
+            "title": "title1-1",
+            "icon": "",
+            "active": true
+          },
+          {
+            "path": "title-1-2",
+            "title": "title1-2",
+            "icon": "",
+            "active": true
+          }
+        ]
+      },
+      {
+        "path": "Icons",
+        "title": "Icons",
+        "icon": "",
+        "active": true,
+        "sub": [
+          {
+            "path": "title1-1",
+            "title": "title1-1",
+            "icon": "",
+            "active": true
+          },
+          {
+            "path": "title-1-2",
+            "title": "title1-2",
+            "icon": "",
+            "active": true
+          }
+        ]
+      },
+      {
+        "path": "Notifications",
+        "title": "Notifications",
+        "icon": "",
+        "active": true,
+        "sub": [
+          {
+            "path": "title1-1",
+            "title": "title1-1",
+            "icon": "",
+            "active": true
+          },
+          {
+            "path": "title-1-2",
+            "title": "title1-2",
+            "icon": "",
+            "active": true
+          }
+        ]
+      },
+      {
+        "path": "Widgets",
+        "title": "Widgets",
+        "icon": "",
+        "active": true,
+        "sub": [
+          {
+            "path": "title1-1",
+            "title": "title1-1",
+            "icon": "",
+            "active": true
+          },
+          {
+            "path": "title-1-2",
+            "title": "title1-2",
+            "icon": "",
+            "active": true
+          }
+        ]
       }
     ]
   }
