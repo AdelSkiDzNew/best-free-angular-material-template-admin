@@ -11,7 +11,6 @@ import {AppService} from "../../../@core/services/app.service";
 })
 export class ContentTopComponent implements OnInit, OnDestroy {
 
-  navigations: (any)[] = [];
   dataSubscription$: Subscription  = Subscription.EMPTY;
   routeTitle: Title | undefined;
 

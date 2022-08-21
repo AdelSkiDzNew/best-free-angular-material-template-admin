@@ -1,7 +1,7 @@
 {
   "navbar" : {
     "title" : "Material UI",
-    "menu" :[
+    "routes" :[
       {
         "path": "dashboard",
         "title": "Dashboard",
@@ -25,7 +25,7 @@
         "title": "Components",
         "icon": "",
         "active": true,
-        "sub": [
+        "children": [
           {
             "path": "title1-1",
             "title": "title1-1",
@@ -45,7 +45,7 @@
         "title": "Buttons",
         "icon": "",
         "active": true,
-        "sub": [
+        "children": [
           {
             "path": "title1-1",
             "title": "title1-1",
@@ -65,7 +65,7 @@
         "title": "Forms",
         "icon": "",
         "active": true,
-        "sub": [
+        "children": [
           {
             "path": "title1-1",
             "title": "title1-1",
@@ -85,7 +85,7 @@
         "title": "Pages",
         "icon": "",
         "active": true,
-        "sub": [
+        "children": [
           {
             "path": "title1-1",
             "title": "title1-1",
@@ -105,7 +105,7 @@
         "title": "Icons",
         "icon": "",
         "active": true,
-        "sub": [
+        "children": [
           {
             "path": "title1-1",
             "title": "title1-1",
@@ -125,7 +125,7 @@
         "title": "Notifications",
         "icon": "",
         "active": true,
-        "sub": [
+        "children": [
           {
             "path": "title1-1",
             "title": "title1-1",
@@ -145,7 +145,7 @@
         "title": "Widgets",
         "icon": "",
         "active": true,
-        "sub": [
+        "children": [
           {
             "path": "title1-1",
             "title": "title1-1",

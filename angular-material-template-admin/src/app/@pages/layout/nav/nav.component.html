@@ -1,14 +1,14 @@
 <mat-accordion multi class="fp-list-group-item">
   <span *ngFor="let item of navbars;let i = index">
-      <mat-expansion-panel [disabled]="!item.sub" class="cursor-pointer">
-        <mat-expansion-panel-header class="expansion-indicator" routerLinkActive="active">
+      <mat-expansion-panel [disabled]="!item.children" class="cursor-pointer">
+        <mat-expansion-panel-header class="expansion-indicator" routerLinkActive="active" [routerLink]="item.path" >
           <mat-panel-title>
-            <a  mat-list-item [routerLink]="item.path"  *ngIf="item.path && item.active" class="menu-link color-white"  (click)="redirect(item)">
+            <a  mat-list-item *ngIf="item.path && item.active" [routerLink]="item.path" class="menu-link color-white"  (click)="redirect(item)">
               <span>{{item.title}}</span>
             </a>
           </mat-panel-title>
         </mat-expansion-panel-header>
-          <mat-panel-title  *ngFor="let ii of item.sub;" routerLinkActive="active">
+          <mat-panel-title  *ngFor="let ii of item.children;" routerLinkActive="active" [routerLink]="item.path" >
             <a  mat-list-item [routerLink]="item.path"  *ngIf="ii.path && ii.active" class="menu-link color-white cursor-pointer" (click)="redirect(ii)">
               <span>{{ii.title}}</span>
             </a>

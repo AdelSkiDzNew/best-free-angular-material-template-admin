@@ -2,15 +2,13 @@ import {NgModule} from '@angular/core';
 import {SharedModule} from "../../@shared/shared.module";
 import {FooterComponent} from "./footer/footer.component";
 import {NavComponent} from "./nav/nav.component";
-import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatListModule} from "@angular/material/list";
 import {CommonModule} from "@angular/common";
-import {MatToolbarModule} from "@angular/material/toolbar";
 import {ContentTopComponent} from "./content-top/content-top.component";
+import {ContentTopValueComponent} from "./content-top/content-top-value.component";
 
 
 @NgModule({
-  declarations: [FooterComponent, NavComponent, ContentTopComponent],
+  declarations: [FooterComponent, NavComponent, ContentTopComponent, ContentTopValueComponent],
   imports: [
     CommonModule,
     SharedModule

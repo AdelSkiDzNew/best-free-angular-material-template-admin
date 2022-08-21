@@ -41,7 +41,7 @@ export class PageComponent implements OnInit, OnDestroy {
     this._navbarSubscription$ = this.appService
       .getParams('navbar')
       .subscribe(next => {
-        this.navbars = next?.menu;
+        this.navbars = next?.routes;
         this.title   = next?.title
       }, error => {
         this._loggerService.error(PageComponent.name, 'Observer got an error: ' + error);
@@ -77,13 +77,16 @@ export class PageComponent implements OnInit, OnDestroy {
 
   private _getUrlCurrentPage(): void {
     this._routerEventSubscription$ = this._router
-      .events.subscribe((event: any) => {
-        const navBar: NavBar = {} as NavBar;
-        if (event instanceof RouterEvent) {
-          this._titleContentTop = event.url.substring(1);
+      .events.subscribe({
+        next: event => {
+          const navBar: NavBar = {} as NavBar;
+          if (event instanceof RouterEvent) {
+            this._titleContentTop = event.url.substring(1);
+          }
+        },
+        error : (error) => {
+          this._loggerService.error(PageComponent.name, 'Observer got an error: ' + error);
         }
-      }, error => {
-        this._loggerService.error(PageComponent.name, 'Observer got an error: ' + error);
       })
   }
 
