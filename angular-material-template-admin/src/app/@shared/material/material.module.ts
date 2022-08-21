@@ -12,6 +12,8 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {MatListModule} from "@angular/material/list";
 import {MatIconModule} from "@angular/material/icon";
 import {MatExpansionModule} from "@angular/material/expansion";
+import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 @NgModule({
   imports: MaterialModule.MATERIAL_MODULE_LIST,
@@ -31,6 +33,8 @@ export class MaterialModule {
     MatToolbarModule,
     MatIconModule,
     MatProgressBarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule,
+    MatGridListModule
   ];
 }

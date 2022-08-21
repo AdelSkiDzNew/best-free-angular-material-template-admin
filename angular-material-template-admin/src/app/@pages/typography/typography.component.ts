@@ -10,6 +10,10 @@ import {ContentTopValueComponent} from "../layout/content-top/content-top-value.
 })
 export class TypographyComponent extends ContentTopValueComponent {
 
+  subtitle: string= "import {MatCardModule} from '@angular/material/card";
+  displayedColumns: string[] = ['header', 'value'];
+  dataSource = ELEMENT_DATA;
+
   constructor(_appService: AppService) {
     super(_appService);
   }
@@ -23,3 +27,18 @@ export class TypographyComponent extends ContentTopValueComponent {
     ];
   }
 }
+
+export interface PeriodicElement {
+  header: string;
+  value: string;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {header: '<h1></h1>', value: 'Write your mat-table and provide data'},
+  {header: '<h2></h2>', value: 'Write your mat-table and provide data'},
+  {header: '<h3></h3>', value: 'Write your mat-table and provide data'},
+  {header: '<h4></h4>', value: 'Write your mat-table and provide data'},
+  {header: '<h5></h5>', value: 'Write your mat-table and provide data'},
+  {header: '<h6></h6>', value: 'Write your mat-table and provide data'}
+];
+

@@ -1,1 +1,34 @@
-<p>typography works!</p>
+<mat-card>
+  <mat-card-title>MatCardModule</mat-card-title>
+  <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="header">
+      <th mat-header-cell *matHeaderCellDef [ngClass]="'id'"> Heading </th>
+      <td mat-cell *matCellDef="let element"> {{element.header}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="value">
+      <th mat-header-cell *matHeaderCellDef> Value </th>
+      <td mat-cell *matCellDef="let element">
+        <div [ngSwitch]="element.header">
+          <div *ngSwitchCase="'<h1></h1>'"><h1>{{element.value}}</h1></div>
+          <div *ngSwitchCase="'<h2></h2>'"><h2>{{element.value}}</h2></div>
+          <div *ngSwitchCase="'<h3></h3>'"><h3>{{element.value}}</h3></div>
+          <div *ngSwitchCase="'<h4></h4>'"><h4>{{element.value}}</h4></div>
+          <div *ngSwitchCase="'<h5></h5>'"><h5>{{element.value}}</h5></div>
+          <div *ngSwitchDefault><h6>{{element.value}}</h6></div>
+        </div>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <br>
+  <br>
+  <mat-card>
+    <mat-card-title>.h1 through .h6 classes</mat-card-title>
+    <mat-card-subtitle>  .h1 through .h6 classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</mat-card-subtitle>
+  </mat-card>
+</mat-card>
