@@ -39,6 +39,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {header: '<h3></h3>', value: 'Write your mat-table and provide data'},
   {header: '<h4></h4>', value: 'Write your mat-table and provide data'},
   {header: '<h5></h5>', value: 'Write your mat-table and provide data'},
-  {header: '<h6></h6>', value: 'Write your mat-table and provide data'}
+  {header: '<h6></h6>', value: 'Write your mat-table and provide data'},
+  {header: 'app-warning-color-2', value: 'Write your mat-table and provide data'},
+  {header: 'app-success-color-2', value: 'Write your mat-table and provide data'},
+  {header: 'app-danger-color-2', value: 'Write your mat-table and provide data'},
+  {header: 'app-optional-color-2', value: 'Write your mat-table and provide data'},
+  {header: 'app-default-color', value: 'Write your mat-table and provide data'},
+  {header: 'app-info-color', value: 'Write your mat-table and provide data'}
 ];
 

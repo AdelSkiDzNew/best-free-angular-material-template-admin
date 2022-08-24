@@ -1,6 +1,8 @@
 <mat-card>
+  <br>
   <mat-card-title>MatCardModule</mat-card-title>
   <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+  <br>
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
     <ng-container matColumnDef="header">
       <th mat-header-cell *matHeaderCellDef [ngClass]="'id'"> Heading </th>
@@ -17,7 +19,12 @@
           <div *ngSwitchCase="'<h3></h3>'"><h3>{{element.value}}</h3></div>
           <div *ngSwitchCase="'<h4></h4>'"><h4>{{element.value}}</h4></div>
           <div *ngSwitchCase="'<h5></h5>'"><h5>{{element.value}}</h5></div>
-          <div *ngSwitchDefault><h6>{{element.value}}</h6></div>
+          <div *ngSwitchCase="'<h6></h6>'"><h6>{{element.value}}</h6></div>
+          <div *ngSwitchDefault>
+            <span [ngClass]="element.header">
+              {{element.value}}
+            </span>
+          </div>
         </div>
       </td>
     </ng-container>
@@ -31,4 +38,6 @@
     <mat-card-title>.h1 through .h6 classes</mat-card-title>
     <mat-card-subtitle>  .h1 through .h6 classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</mat-card-subtitle>
   </mat-card>
+  <br>
+  <br>
 </mat-card>
