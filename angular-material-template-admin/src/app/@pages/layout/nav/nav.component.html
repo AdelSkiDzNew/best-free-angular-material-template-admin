@@ -4,6 +4,7 @@
         <mat-expansion-panel-header class="expansion-indicator" routerLinkActive="active" [routerLink]="item.path" >
           <mat-panel-title>
             <a  mat-list-item *ngIf="item.path && item.active" [routerLink]="item.path" class="menu-link color-white"  (click)="redirect(item)">
+              <mat-icon routerLinkActive="app-icon-actived" class="app-icon">{{item.icon}}</mat-icon>
               <span>{{item.title}}</span>
             </a>
           </mat-panel-title>

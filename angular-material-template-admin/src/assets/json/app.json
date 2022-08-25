@@ -5,156 +5,60 @@
       {
         "path": "dashboard",
         "title": "Dashboard",
-        "icon": "",
+        "icon": "dashboard",
         "active": true
       },
       {
         "path": "typography",
         "title": "Typography",
-        "icon": "",
+        "icon": "library_books",
         "active": true
       },
       {
         "path": "colors",
         "title": "Colors",
-        "icon": "",
+        "icon": "invert_colors",
+        "active": true
+      },
+      {
+        "path": "icons",
+        "title": "Icons",
+        "icon": "bubble_chart",
         "active": true
       },
       {
         "path": "Components",
         "title": "Components",
-        "icon": "",
+        "icon": "settings_input_component",
         "active": true,
         "children": [
           {
-            "path": "title1-1",
-            "title": "title1-1",
+            "path": "Buttons",
+            "title": "Buttons",
             "icon": "",
             "active": true
           },
           {
-            "path": "title-1-2",
-            "title": "title1-2",
-            "icon": "",
-            "active": true
-          }
-        ]
-      },
-      {
-        "path": "Buttons",
-        "title": "Buttons",
-        "icon": "",
-        "active": true,
-        "children": [
-          {
-            "path": "title1-1",
-            "title": "title1-1",
+            "path": "Forms",
+            "title": "Forms",
             "icon": "",
             "active": true
           },
           {
-            "path": "title-1-2",
-            "title": "title1-2",
-            "icon": "",
-            "active": true
-          }
-        ]
-      },
-      {
-        "path": "Forms",
-        "title": "Forms",
-        "icon": "",
-        "active": true,
-        "children": [
-          {
-            "path": "title1-1",
-            "title": "title1-1",
+            "path": "Pages",
+            "title": "Pages",
             "icon": "",
             "active": true
           },
           {
-            "path": "title-1-2",
-            "title": "title1-2",
-            "icon": "",
-            "active": true
-          }
-        ]
-      },
-      {
-        "path": "Pages",
-        "title": "Pages",
-        "icon": "",
-        "active": true,
-        "children": [
-          {
-            "path": "title1-1",
-            "title": "title1-1",
+            "path": "Notifications",
+            "title": "Notifications",
             "icon": "",
             "active": true
           },
           {
-            "path": "title-1-2",
-            "title": "title1-2",
-            "icon": "",
-            "active": true
-          }
-        ]
-      },
-      {
-        "path": "Icons",
-        "title": "Icons",
-        "icon": "",
-        "active": true,
-        "children": [
-          {
-            "path": "title1-1",
-            "title": "title1-1",
-            "icon": "",
-            "active": true
-          },
-          {
-            "path": "title-1-2",
-            "title": "title1-2",
-            "icon": "",
-            "active": true
-          }
-        ]
-      },
-      {
-        "path": "Notifications",
-        "title": "Notifications",
-        "icon": "",
-        "active": true,
-        "children": [
-          {
-            "path": "title1-1",
-            "title": "title1-1",
-            "icon": "",
-            "active": true
-          },
-          {
-            "path": "title-1-2",
-            "title": "title1-2",
-            "icon": "",
-            "active": true
-          }
-        ]
-      },
-      {
-        "path": "Widgets",
-        "title": "Widgets",
-        "icon": "",
-        "active": true,
-        "children": [
-          {
-            "path": "title1-1",
-            "title": "title1-1",
-            "icon": "",
-            "active": true
-          },
-          {
-            "path": "title-1-2",
-            "title": "title1-2",
+            "path": "Widgets",
+            "title": "Widgets",
             "icon": "",
             "active": true
           }

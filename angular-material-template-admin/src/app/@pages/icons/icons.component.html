@@ -1,0 +1,29 @@
+
+<mat-card>
+  <br>
+  <mat-card-title>MatIconModule</mat-card-title>
+  <mat-card-subtitle>Mat-Icon List : 900+ Angular Material Icons
+    Learn how to use Angular material Icons</mat-card-subtitle>
+  <br>
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="header">
+      <th mat-header-cell *matHeaderCellDef [ngClass]="'id'"> Icon Name </th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon class="app-icon">{{element.header}}</mat-icon>
+        {{element.name}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="value">
+      <th mat-header-cell *matHeaderCellDef> Mat-icon code </th>
+      <td mat-cell *matCellDef="let element">
+        {{element.value}}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <br><br>
+  <a href="https://www.angularjswiki.com/fr/angular/angular-material-icons-list-mat-icon-list/">See more....</a>
+</mat-card>

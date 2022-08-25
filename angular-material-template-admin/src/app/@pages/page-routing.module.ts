@@ -6,6 +6,7 @@ export declare const enum Route {
   Dashboard = 'dashboard',
   Colors = 'colors',
   Typography = 'typography',
+  Icons = 'icons',
 }
 
 const routes: Routes = [
@@ -27,11 +28,14 @@ const routes: Routes = [
         path: `${Route.Typography}`,
         loadChildren: () => import('../@pages/typography/typography.module')
           .then(typography => typography.TypographyModule),
+      },
+      {
+        path: `${Route.Icons}`,
+        loadChildren: () => import('../@pages/icons/icons.module')
+          .then(icon => icon.IconsModule),
       }
     ]
-  },
-
-
+  }
 ];
 
 @NgModule({
